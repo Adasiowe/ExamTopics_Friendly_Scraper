@@ -1,7 +1,7 @@
-# fetch_urls/parser.py
 from bs4 import BeautifulSoup
 from typing import List
 import logging
+
 
 class Parser:
     @staticmethod
@@ -17,7 +17,9 @@ class Parser:
                 except ValueError:
                     logging.error("Error parsing page numbers. Defaulting to 1 page.")
             else:
-                logging.error("Pagination info not found properly. Defaulting to 1 page.")
+                logging.error(
+                    "Pagination info not found properly. Defaulting to 1 page."
+                )
         else:
             logging.error("Could not find pagination info. Defaulting to 1 page.")
         return 1

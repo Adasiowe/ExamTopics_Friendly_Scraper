@@ -1,10 +1,9 @@
-# fetch_urls.py
 import logging
 from fetch_urls.provider_scraper import ProviderScraper
 
+
 def main():
-    # Configure logging
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
     providers = {
         1: "Microsoft",
@@ -45,6 +44,7 @@ def main():
     print(f"\n{last_page} pages will be scraped for provider '{provider}'.\n")
     scraper.scrape_pages(last_page)
     scraper.save_urls()
+
 
 if __name__ == "__main__":
     main()

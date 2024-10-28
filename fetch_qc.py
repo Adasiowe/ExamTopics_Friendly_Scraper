@@ -1,11 +1,10 @@
-# fetch_qc.py
 import os
 import logging
 from fetch_qc.question_scraper import QuestionScraper
 
+
 def main():
-    # Configure logging
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
     providers = {
         1: "Microsoft",
@@ -110,7 +109,9 @@ def main():
     # Check if the file exists
     if not os.path.exists(file_path):
         print(f"\nThe file '{provider_file}' does not exist in the 'urls' folder.")
-        print("Please run the URL fetching script 'fetch_urls.py' first to generate the required URL file.")
+        print(
+            "Please run the URL fetching script 'fetch_urls.py' first to generate the required URL file."
+        )
         return
 
     # Load URLs based on provider and exam/filter (if Google or HashiCorp for now)
@@ -154,6 +155,7 @@ def main():
     # Initialize the scraper and scrape the questions
     scraper = QuestionScraper(urls_to_scrape)
     scraper.scrape_questions(provider, exam_string or hashicorp_filter)
+
 
 if __name__ == "__main__":
     main()
