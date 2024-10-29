@@ -1,10 +1,36 @@
-# fetch_qc.py
 import logging
 from fetch_qc.question_scraper import QuestionScraper
 import os
 
-def main():
+
+def setup_logging():
     logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+
+def display_options(options_dict, title):
+    print(f"\n{title}")
+    for num, name in options_dict.items():
+        print(f"{num}. {name}")
+
+
+def get_user_choice(options_dict, prompt):
+    while True:
+        try:
+            choice = int(input(f"{prompt}: ").strip())
+            if choice in options_dict:
+                return options_dict[choice]
+            else:
+                print("Invalid choice. Please select a number from the list.")
+        except ValueError:
+            print("Invalid input. Please enter a number.")
+
+
+def filter_urls(all_urls, filter_string):
+    return [url for url in all_urls if filter_string.lower() in url.lower()]
+
+
+def main():
+    setup_logging()
 
     providers = {
         1: "Microsoft",
@@ -156,75 +182,28 @@ def main():
         104: "sc-900",
     }
 
-    print("Choose a provider by entering the corresponding number:")
-    for num, name in providers.items():
-        print(f"{num}. {name}")
+    providers_with_exams = {
+        "Google": google_exams,
+        "HashiCorp": hashicorp_exams,
+        "Microsoft": microsoft_exams,
+    }
 
-    while True:
-        try:
-            choice = int(input("Enter provider number: ").strip())
-            if choice in providers:
-                provider = providers[choice]
-                break
-            else:
-                print("Invalid choice. Please select a number from the list.")
-        except ValueError:
-            print("Invalid input. Please enter a number.")
+    print("Choose a provider by entering the corresponding number:")
+    display_options(providers, "Providers:")
+
+    provider_choice = get_user_choice(providers, "Enter provider number")
+    provider = provider_choice
 
     # Initialize variables
-    exam_string = None
-    hashicorp_filter = None
-    microsoft_exam = None
+    selected_exam = None
+    urls_to_scrape = []
 
-    # If provider is Google, prompt for exam selection
-    if choice == 10:
-        print("\nChoose an exam by entering the corresponding number:")
-        for num, name in google_exams.items():
-            display_name = name.replace("-", " ").title()
-            print(f"{num}. {display_name}")
-        while True:
-            try:
-                exam_choice = int(input("Enter exam number: ").strip())
-                if exam_choice in google_exams:
-                    exam_string = google_exams[exam_choice]
-                    break
-                else:
-                    print("Invalid choice. Please select a number from the list.")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-
-    # If provider is HashiCorp, prompt for filter selection
-    elif choice == 13:
-        print("\nChoose a certification by entering the corresponding number:")
-        for num, name in hashicorp_exams.items():
-            display_name = name.replace("-", " ").title()
-            print(f"{num}. {display_name}")
-        while True:
-            try:
-                filter_choice = int(input("Enter certification number: ").strip())
-                if filter_choice in hashicorp_exams:
-                    hashicorp_filter = hashicorp_exams[filter_choice]
-                    break
-                else:
-                    print("Invalid choice. Please select a number from the list.")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
-
-    # If provider is Microsoft, prompt for exam selection
-    elif choice == 1:
-        print("\nChoose a Microsoft exam by entering the corresponding number:")
-        for num, code in microsoft_exams.items():
-            print(f"{num}. {code.upper()}")
-        while True:
-            try:
-                exam_choice = int(input("Enter exam number: ").strip())
-                if exam_choice in microsoft_exams:
-                    microsoft_exam = microsoft_exams[exam_choice]
-                    break
-                else:
-                    print("Invalid choice. Please select a number from the list.")
-            except ValueError:
-                print("Invalid input. Please enter a number.")
+    # Check if the selected provider has certifications
+    if provider in providers_with_exams:
+        exams = providers_with_exams[provider]
+        exam_title = f"Choose a {'Microsoft' if provider == 'Microsoft' else provider} exam by entering the corresponding number:"
+        display_options(exams, exam_title)
+        selected_exam = get_user_choice(exams, "Enter exam number")
 
     # Construct the file name based on provider
     provider_file = f"{provider.lower()}_urls.txt"
@@ -238,64 +217,30 @@ def main():
         )
         return
 
-    # Load URLs based on provider and exam/filter (if Google, HashiCorp, or Microsoft)
-    if choice == 10:
-        with open(file_path, "r", encoding="utf-8") as f:
-            all_urls = [line.strip() for line in f if line.strip()]
+    # Load URLs based on provider and exam (if applicable)
+    with open(file_path, "r", encoding="utf-8") as f:
+        all_urls = [line.strip() for line in f if line.strip()]
 
-        filtered_urls = [url for url in all_urls if exam_string in url.lower()]
+    if selected_exam:
+        filtered_urls = filter_urls(all_urls, selected_exam)
         if not filtered_urls:
-            print(
-                f"\nNo URLs found for the selected exam '{exam_string.replace('-', ' ').title()}'."
-            )
+            print(f"\nNo URLs found for the selected exam '{selected_exam.upper()}'.")
             return
         print(
-            f"\nFound {len(filtered_urls)} URLs for the selected exam '{exam_string.replace('-', ' ').title()}'."
+            f"\nFound {len(filtered_urls)} URLs for the selected exam '{selected_exam.upper()}'."
         )
         urls_to_scrape = filtered_urls
-
-    elif choice == 13:
-        with open(file_path, "r", encoding="utf-8") as f:
-            all_urls = [line.strip() for line in f if line.strip()]
-
-        filtered_urls = [url for url in all_urls if hashicorp_filter in url.lower()]
-        if not filtered_urls:
-            print(
-                f"\nNo URLs found for the selected certification '{hashicorp_filter.replace('-', ' ').title()}'."
-            )
-            return
-        print(
-            f"\nFound {len(filtered_urls)} URLs for the selected certification '{hashicorp_filter.replace('-', ' ').title()}'."
-        )
-        urls_to_scrape = filtered_urls
-
-    elif choice == 1:
-        with open(file_path, "r", encoding="utf-8") as f:
-            all_urls = [line.strip() for line in f if line.strip()]
-
-        filtered_urls = [url for url in all_urls if microsoft_exam in url.lower()]
-        if not filtered_urls:
-            print(
-                f"\nNo URLs found for the selected exam '{microsoft_exam.upper()}'."
-            )
-            return
-        print(
-            f"\nFound {len(filtered_urls)} URLs for the selected exam '{microsoft_exam.upper()}'."
-        )
-        urls_to_scrape = filtered_urls
-
     else:
-        # For other providers, load all URLs
-        with open(file_path, "r", encoding="utf-8") as f:
-            urls_to_scrape = [line.strip() for line in f if line.strip()]
+        # For providers without exams, use all URLs
+        urls_to_scrape = all_urls
         if not urls_to_scrape:
             print(f"\nNo URLs found in the file '{provider_file}'.")
             return
         print(f"\nFound {len(urls_to_scrape)} URLs for provider '{provider}'.")
 
-    # Initialize the scraper and scrape the questions
+    # Initialize the scraper
     scraper = QuestionScraper(urls_to_scrape)
-    scraper.scrape_questions(provider, exam_string or hashicorp_filter or microsoft_exam)
+    scraper.scrape_questions(provider, selected_exam)
 
 
 if __name__ == "__main__":
