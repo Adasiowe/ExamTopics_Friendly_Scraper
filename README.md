@@ -48,7 +48,7 @@ Run the `fetch_urls.py` script to fetch discussion URLs for a selected provider:
 
 -   **Provider and Exam Selection**:
     -   The script prompts the user to select a provider from a list.
-    -   For certain providers (only Google and HashiCorp at the moment), the user is further prompted to choose a specific exam or certification (e.g., Google’s "Professional Cloud Architect" or HashiCorp’s "Vault Associate").
+    -   For certain providers (only Google, Microsoft and HashiCorp at the moment), the user is further prompted to choose a specific exam or certification (e.g., Google’s "Professional Cloud Architect" or HashiCorp’s "Vault Associate").
 -   **Reading URLs**:
     -   The script reads the `.txt` file for the chosen provider from the `urls` folder.
     -   If an exam or certification is selected, the script filters URLs to match the chosen exam or certification.

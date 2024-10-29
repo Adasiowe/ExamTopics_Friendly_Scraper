@@ -49,11 +49,11 @@ class Parser:
                     choice_text = li.get_text(separator=" ", strip=True)
                     choices.append(f"{letter} {choice_text}")
             if not choices:
-                choices_text = "VERIFY"
+                choices_text = "VERIFY - No multiple choice answers found. Perhaps an image?"
             else:
                 choices_text = "\n".join(choices)
         else:
-            choices_text = "VERIFY"
+            choices_text = "VERIFY - No multiple choice answers found. Perhaps an image?"
 
         return Question(
             number=question_number, body=question_text, choices=choices_text
