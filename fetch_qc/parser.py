@@ -12,7 +12,7 @@ class Parser:
         question_section = soup.find("div", class_="question-discussion-header")
         if not question_section:
             logging.warning(f"Could not find 'question-discussion-header' in {url}")
-            return Question(number="UNKNOWN", body="UNKNOWN", choices="UNKNOWN")
+            return Question(number="UNKNOWN", body="UNKNOWN", choices="UNKNOWN", url=url)
         q_num_div = question_section.find("div")
         if q_num_div:
             text = q_num_div.get_text(separator=" ", strip=True)
@@ -56,5 +56,8 @@ class Parser:
             choices_text = "VERIFY - No multiple choice answers found. Perhaps an image?"
 
         return Question(
-            number=question_number, body=question_text, choices=choices_text
+            number=question_number,
+            body=question_text,
+            choices=choices_text,
+            url=url
         )

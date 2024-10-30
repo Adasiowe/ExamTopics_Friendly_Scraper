@@ -28,18 +28,7 @@ class QuestionScraper:
             self.failed_urls.append(url)
             return None
 
-    def scrape_questions(self, provider: str, exam_name: Optional[str] = None) -> None:
-        # Define the output directory
-        output_dir = "../scraped_discussions"
-        os.makedirs(output_dir, exist_ok=True)  # Create the folder if it doesn't exist
-
-        if exam_name:
-            csv_filename = f"{provider.lower()}-{exam_name.lower()}.csv"
-        else:
-            csv_filename = f"{provider.lower()}.csv"
-
-        csv_path = os.path.join(output_dir, csv_filename)
-
+    def scrape_questions(self, provider: str, exam_name: Optional[str], csv_path: str) -> None:
         logging.info(f"\nAttempting to fetch {len(self.urls)} questions.\n")
         questions = []
 

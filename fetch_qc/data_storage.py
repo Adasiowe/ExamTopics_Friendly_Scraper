@@ -4,7 +4,6 @@ import logging
 from typing import List
 from .models import Question
 
-
 class DataStorage:
     @staticmethod
     def save_questions(questions: List[Question], provider: str = "") -> None:
@@ -20,7 +19,12 @@ class DataStorage:
             with open(csv_path, mode="w", newline="", encoding="utf-8") as file:
                 writer = csv.DictWriter(
                     file,
-                    fieldnames=["Question Number", "Question Body", "Question Choices"],
+                    fieldnames=[
+                        "Question Number",
+                        "Question Body",
+                        "Question Choices",
+                        "Question URL",
+                    ],
                 )
                 writer.writeheader()
                 for question in questions:
@@ -29,6 +33,7 @@ class DataStorage:
                             "Question Number": question.number,
                             "Question Body": question.body,
                             "Question Choices": question.choices,
+                            "Question URL": question.url,
                         }
                     )
             logging.info(f"Data saved to '{csv_path}'.")

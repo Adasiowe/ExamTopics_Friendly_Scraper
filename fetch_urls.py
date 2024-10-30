@@ -1,4 +1,5 @@
 import logging
+import os
 from fetch_urls.provider_scraper import ProviderScraper
 
 
@@ -38,6 +39,25 @@ def main():
                 print("Invalid choice. Please select a number from the list.")
         except ValueError:
             print("Invalid input. Please enter a number.")
+
+    # Check if the URL file already exists
+    provider_file = f"{provider.lower()}_urls.txt"
+    file_path = os.path.join("urls", provider_file)
+
+    if os.path.exists(file_path):
+        print(f"\nThe file '{provider_file}' already exists in the 'urls' folder.")
+        while True:
+            user_input = input(
+                "Do you want to overwrite it or skip the scraping? (Enter 'overwrite' or 'skip'): "
+            ).strip().lower()
+            if user_input == 'overwrite':
+                # Proceed with scraping and overwriting the file
+                break
+            elif user_input == 'skip':
+                print("Skipping the scraping. Exiting.")
+                return  # Exit the script
+            else:
+                print("Invalid input. Please enter 'overwrite' or 'skip'.")
 
     scraper = ProviderScraper(provider)
     last_page = scraper.fetch_total_pages()

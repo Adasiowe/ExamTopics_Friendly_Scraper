@@ -238,9 +238,34 @@ def main():
             return
         print(f"\nFound {len(urls_to_scrape)} URLs for provider '{provider}'.")
 
+    # Construct the CSV filename
+    output_dir = os.path.join("scraped_discussions")
+    os.makedirs(output_dir, exist_ok=True)
+    if selected_exam:
+        csv_filename = f"{provider.lower()}-{selected_exam.lower()}.csv"
+    else:
+        csv_filename = f"{provider.lower()}.csv"
+    csv_path = os.path.join(output_dir, csv_filename)
+
+    # Check if the CSV file already exists
+    if os.path.exists(csv_path):
+        print(f"\nThe file '{csv_filename}' already exists in the 'scraped_discussions' folder.")
+        while True:
+            user_input = input(
+                "Do you want to overwrite it or skip the scraping? (Enter 'overwrite' or 'skip'): "
+            ).strip().lower()
+            if user_input == 'overwrite':
+                # Proceed with scraping and overwriting the file
+                break
+            elif user_input == 'skip':
+                print("Skipping the scraping. Exiting.")
+                return  # Exit the script
+            else:
+                print("Invalid input. Please enter 'overwrite' or 'skip'.")
+
     # Initialize the scraper
     scraper = QuestionScraper(urls_to_scrape)
-    scraper.scrape_questions(provider, selected_exam)
+    scraper.scrape_questions(provider, selected_exam, csv_path)
 
 
 if __name__ == "__main__":
