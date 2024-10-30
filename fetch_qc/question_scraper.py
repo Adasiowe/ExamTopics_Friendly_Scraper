@@ -48,8 +48,8 @@ class QuestionScraper:
                 logging.info(f"Question #{idx} fetched successfully.\n")
             else:
                 logging.warning(f"Question #{idx} failed to fetch.\n")
-            # Respectful scraping: wait between 1 to 2 seconds
-            delay = random.uniform(1, 2)
+            # Respectful scraping: wait between 1 to 3 seconds
+            delay = random.uniform(1, 3)
             logging.info(f"Waiting for {delay:.2f} seconds before next request...\n")
             time.sleep(delay)
 
