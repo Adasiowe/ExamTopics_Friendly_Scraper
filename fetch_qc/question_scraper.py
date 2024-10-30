@@ -29,6 +29,14 @@ class QuestionScraper:
             return None
 
     def scrape_questions(self, provider: str, exam_name: Optional[str], csv_path: str) -> None:
+        # Define the output directory
+        output_dir = "../scraped_discussions"
+        os.makedirs(output_dir, exist_ok=True)  # Create the folder if it doesn't exist
+        if exam_name:
+            csv_filename = f"{provider.lower()}-{exam_name.lower()}.csv"
+        else:
+            csv_filename = f"{provider.lower()}.csv"
+        csv_path = os.path.join(output_dir, csv_filename)
         logging.info(f"\nAttempting to fetch {len(self.urls)} questions.\n")
         questions = []
 
@@ -40,8 +48,8 @@ class QuestionScraper:
                 logging.info(f"Question #{idx} fetched successfully.\n")
             else:
                 logging.warning(f"Question #{idx} failed to fetch.\n")
-            # Respectful scraping: wait between 1 to 3 seconds
-            delay = random.uniform(1, 3)
+            # Respectful scraping: wait between 1 to 2 seconds
+            delay = random.uniform(1, 2)
             logging.info(f"Waiting for {delay:.2f} seconds before next request...\n")
             time.sleep(delay)
 
