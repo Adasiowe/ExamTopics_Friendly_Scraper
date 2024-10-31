@@ -1,11 +1,12 @@
 
 # ExamTopics Friendly Scraper
 
-This project consists of two main scripts: `fetch_urls.py` for collecting discussion URLs for a chosen provider, and `fetch_qc.py` for scraping question content and saving it as CSV files. The project is organized into modular packages for handling requests, parsing HTML, and managing data storage.
+This project consists of two main scripts: `fetch_urls.py` for collecting discussion URLs for a chosen provider, and `fetch_qc.py` for scraping question content and saving it as CSV files.
 
 ## Prerequisites
 
-1.  **Install Required Packages**: Install the necessary Python packages using `requirements.txt`. Run the following command in the project root directory:
+1.  **Install Python Packages**:
+Run the following command in the project root directory:
     
     `pip install -r requirements.txt`
 
@@ -29,7 +30,7 @@ Run the `fetch_urls.py` script to fetch discussion URLs for a selected provider:
 **Process:**
 
 -   **Provider Selection**: When prompted, enter the number corresponding to the provider you wish to scrape.
--   **Scraping**: The script will scrape all pages for the selected provider.
+-   **Scraping**: The script will scrape all discussion urls for the selected provider.
 -   **Output**: URLs will be saved to a text file named `{provider}_urls.txt` in the `urls` folder (e.g., `urls/microsoft_urls.txt`).
 
 ----------
@@ -38,7 +39,7 @@ Run the `fetch_urls.py` script to fetch discussion URLs for a selected provider:
 
 1.  **Prepare URL Files**
     
-    -   Ensure that all URL files are located in the `urls` folder. This folder is created automatically by `fetch_urls.py`. Each file should follow the format `{provider}_urls.txt`.
+    -   Ensure that desired urls.txt files are located in the `urls` folder. This folder is created automatically by `fetch_urls.py`. Each file should follow the format `{provider}_urls.txt`.
 2.  **Run the Question Scraper**
     
     `python fetch_qc.py` 
@@ -64,14 +65,14 @@ Run the `fetch_urls.py` script to fetch discussion URLs for a selected provider:
 -   **`urls/{provider}_urls.txt`**:
     -   Contains the list of discussion URLs for the selected provider, saved in the `urls` folder.
 -   **`scraped_discussions/{provider}-{exam_name}.csv`**:
-    -   Contains the scraped questions, choices, and suggested answers for the specified provider and exam/certification, saved in the `scraped_discussions` folder.
+    -   Contains the scraped questions, choices, and discussion urls.
     -   If no exam or certification is selected, the file is named `{provider}.csv`.
 
 ----------
 
 ## Notes
 
+-   **Failures**: Sometimes the scraper fails to scrape some questions from the urls. The list of failed scrapes gets displayed at the end. Its usually between 0-3% of questions. I might fix that in the future. 
 -   **Non-Commercial Use Only**: This script is intended for personal, non-commercial use. The data it retrieves is freely available on the public internet, and this tool simply automates the retrieval process for convenience. Use responsibly pls.
--   **Data Accessibility**: All data collected by this tool is publicly accessible on the internet; this tool does not bypass any protections. It is designed to collect data that you could access manually by browsing.
 -   **Delays Between Requests**: The scripts include random delays between requests to avoid overwhelming the server.
 -   **Predownloaded Files**: Several urls.txt files and scraped discussions can be found in this repo. They are current as of 29.10.2024. 
