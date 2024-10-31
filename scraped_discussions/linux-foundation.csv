@@ -1,0 +1,962 @@
+Question Number,Question Body,Question Choices,Question URL
+128,Which of the following options is true about considerations for large Kubernetes clusters?,"A. Kubernetes supports up to 1000 nodes and recommends no more than 1000 containers per node.
+B. Kubernetes supports up to 5000 nodes and recommends no more than 500 pods per node.
+C. Kubernetes supports up to 5000 nodes and recommends no more than 110 pods per node.
+D. Kubernetes supports up to 50 nodes and recommends no more than 1000 containers per node.",https://www.examtopics.com/discussions/linux-foundation/view/150239-exam-kcna-topic-1-question-128-discussion/
+126,Which of the following is the correct command to run a nginx deployment with 2 replicas?,"A. kubectl run deploy nginx --image=nginx --replicas=2
+B. kubectl create deploy nginx --image=nginx --replicas=2
+C. kubectl create nginx deployment --image=nginx –replicas=2
+D. kubectl create deploy nginx --image=nginx --count=2",https://www.examtopics.com/discussions/linux-foundation/view/150237-exam-kcna-topic-1-question-126-discussion/
+46,Which of these components is part of the Kubernetes Control Plane?,"A. coredns
+B. cloud-controller-manager
+C. kube-proxy
+D. kubelet",https://www.examtopics.com/discussions/linux-foundation/view/132543-exam-kcna-topic-1-question-46-discussion/
+42,What does CNCF stand for?,"A. Cloud Native Community Foundation
+B. Cloud Native Computing Foundation
+C. Cloud Neutral Computing Foundation
+D. Cloud Neutral Community Foundation",https://www.examtopics.com/discussions/linux-foundation/view/149725-exam-kcna-topic-1-question-42-discussion/
+5,"Regarding peer lifecycle chaincode, which of the following is the incorrect (unsupported) subcommand for query?","A. peer lifecycle chaincode querypackaged
+B. peer lifecycle chaincode querycommitted
+C. peer lifecycle chaincode queryapproved
+D. peer lifecycle chaincode queryinstalled",https://www.examtopics.com/discussions/linux-foundation/view/149060-exam-hfcp-topic-1-question-5-discussion/
+4,"When building a test network, how many nodes are adequate for an Ordering Service?","A. There is no set number of nodes required for an Ordering Service.
+B. Three ordering nodes are needed for a test Ordering Service.
+C. One ordering nodes is sufficient for an Ordering Service.
+D. Ordering Service nodes are optional in a test network.",https://www.examtopics.com/discussions/linux-foundation/view/149059-exam-hfcp-topic-1-question-4-discussion/
+2,An endorsement policy lists what?,"A. The number of organizations involved in a transaction.
+B. The number of peers needed to endorse a transaction.
+C. The order in which transactions are executed.
+D. The identities required for endorsing a transaction.",https://www.examtopics.com/discussions/linux-foundation/view/149058-exam-hfcp-topic-1-question-2-discussion/
+49,How can you monitor the progress for an updated Deployment/DaemonSets/StatefulSets?,"A. kubectl rollout watch
+B. kubectl rollout progress
+C. kubectl rollout state
+D. kubectl rollout status",https://www.examtopics.com/discussions/linux-foundation/view/139360-exam-kcna-topic-1-question-49-discussion/
+129,Which component of the node is responsible to run workloads?,"A. The kubelet.
+B. The kubeproxy.
+C. The kube-apiserver.
+D. The container runtime.",https://www.examtopics.com/discussions/linux-foundation/view/147589-exam-kcna-topic-1-question-129-discussion/
+68,Can a Kubernetes Service expose multiple ports?,"A. No, you can only expose one port per each Service.
+B. Yes, but you must specify an unambiguous name for each port.
+C. Yes, the only requirement is to use different port numbers.
+D. No, because the only port you can expose is port number 443.",https://www.examtopics.com/discussions/linux-foundation/view/129528-exam-kcna-topic-1-question-68-discussion/
+59,Services and Pods in Kubernetes are ______ objects.,"A. JSON
+B. YAML
+C. Java
+D. REST",https://www.examtopics.com/discussions/linux-foundation/view/135371-exam-kcna-topic-1-question-59-discussion/
+58,"In the Kubernetes platform, which component is responsible for running containers?","A. etcd
+B. CRI-O
+C. cloud-controller-manager
+D. kube-controller-manager",https://www.examtopics.com/discussions/linux-foundation/view/148293-exam-kcna-topic-1-question-58-discussion/
+57,What is the telemetry component that represents a series of related distributed events that encode the end-to-end request flow through a distributed system?,"A. Metrics
+B. Logs
+C. Spans
+D. Traces",https://www.examtopics.com/discussions/linux-foundation/view/148292-exam-kcna-topic-1-question-57-discussion/
+56,What is a DaemonSet?,"A. It's a type of workload that ensures a specific set of nodes run a copy of a Pod.
+B. It's a type of workload responsible for maintaining a stable set of replica Pods running in any node.
+C. It's a type of workload that needs to be run periodically on a given schedule.
+D. It's a type of workload that provides guarantees about ordering, uniqueness, and identity of a set of Pods.",https://www.examtopics.com/discussions/linux-foundation/view/148291-exam-kcna-topic-1-question-56-discussion/
+53,What is the core metric type in Prometheus used to represent a single numerical value that can go up and down?,"A. Summary
+B. Counter
+C. Histogram
+D. Gauge",https://www.examtopics.com/discussions/linux-foundation/view/139361-exam-kcna-topic-1-question-53-discussion/
+113,How many different Kubernetes service types can you define?,"A. 2
+B. 3
+C. 4
+D. 5",https://www.examtopics.com/discussions/linux-foundation/view/147404-exam-kcna-topic-1-question-113-discussion/
+111,Which of the following is a valid PromQL query?,"A. SELECT * from http_requests_total WHERE job=apiserver
+B. http_requests_total WHERE (job=""apiserver"")
+C. SELECT * from http_requests_total
+D. http_requests_total(job=""apiserver"")",https://www.examtopics.com/discussions/linux-foundation/view/147997-exam-kcna-topic-1-question-111-discussion/
+96,Which of the following options includes valid API versions?,"A. alpha1v1, beta3v3, v2
+B. alpha1, beta3, v2
+C. v1alpha1, v2beta3, v2
+D. v1alpha1, v2beta3, 2.0",https://www.examtopics.com/discussions/linux-foundation/view/128036-exam-kcna-topic-1-question-96-discussion/
+83,Which kubernetes component is the smallest deployable unit of computing?,"A. StatefulSet
+B. Deployment
+C. Pod
+D. Container",https://www.examtopics.com/discussions/linux-foundation/view/128035-exam-kcna-topic-1-question-83-discussion/
+71,Which command provides information about the field replicas within the spec resource of a deployment object?,"A. kubectl get deployment.spec.replicas
+B. kubectl explain deployment.spec.replicas
+C. kubectl describe deployment.spec.replicas
+D. kubectl explain deployment --spec.replicas",https://www.examtopics.com/discussions/linux-foundation/view/139950-exam-kcna-topic-1-question-71-discussion/
+54,What is the primary mechanism to identify grouped objects in a Kubernetes cluster?,"A. Custom Resources
+B. Labels
+C. Label Selector
+D. Pod",https://www.examtopics.com/discussions/linux-foundation/view/135369-exam-kcna-topic-1-question-54-discussion/
+37,Which Kubernetes feature would you use to guard against split brain scenarios with your distributed application?,"A. Replication controllers
+B. Consensus protocols
+C. Rolling updates
+D. StatefulSet",https://www.examtopics.com/discussions/linux-foundation/view/129239-exam-kcna-topic-1-question-37-discussion/
+86,Which of the following capabilities are you allowed to add to a container using the Restricted policy?,"A. CHOWN
+B. SYS_CHROOT
+C. SETUID
+D. NET_BIND_SERVICE",https://www.examtopics.com/discussions/linux-foundation/view/135368-exam-kcna-topic-1-question-86-discussion/
+77,How to create a headless service?,"A. By specifying .spec.ClusterIP: headless
+B. By specifying .spec.clusterIP: None
+C. By specifying .spec.ClusterIP: 0.0.0.0
+D. By specifying .spec.ClusterIP: localhost",https://www.examtopics.com/discussions/linux-foundation/view/147802-exam-kcna-topic-1-question-77-discussion/
+50,What is the goal of load balancing?,"A. Automatically measure request performance across instances of an application.
+B. Automatically distribute requests across different versions of an application.
+C. Automatically distribute instances of an application across the cluster.
+D. Automatically distribute requests across instances of an application.",https://www.examtopics.com/discussions/linux-foundation/view/147799-exam-kcna-topic-1-question-50-discussion/
+48,What is a key feature of a container network?,"A. Proxying REST requests across a set of containers.
+B. Allowing containers running on separate hosts to communicate.
+C. Allowing containers on the same host to communicate.
+D. Caching remote disk access.",https://www.examtopics.com/discussions/linux-foundation/view/147798-exam-kcna-topic-1-question-48-discussion/
+45,Which command will list the resource types that exist within a cluster?,"A. kubectl api-resources
+B. kubectl get namespaces
+C. kubectl api-versions
+D. curl https://kubectrl/namespaces",https://www.examtopics.com/discussions/linux-foundation/view/147797-exam-kcna-topic-1-question-45-discussion/
+3,A CronJob is scheduled to run by a user every one hour. What happens in the cluster when it's time for this CronJob to run?,"A. Kubelet watches API Server for CronJob objects. When it's time for a Job to run, it runs the Pod directly.
+B. Kube-scheduler watches API Server for CronJob objects, and this is why it's called kube-scheduler.
+C. CronJob controller component creates a Pod and waits until it finishes to run.
+D. CronJob controller component creates a Job. Then the Job controller creates a Pod and waits until it finishes to run.",https://www.examtopics.com/discussions/linux-foundation/view/136898-exam-kcna-topic-1-question-3-discussion/
+2,"Which API object is the recommended way to run a scalable, stateless application on your cluster?","A. ReplicaSet
+B. Deployment
+C. DaemonSet
+D. Pod",https://www.examtopics.com/discussions/linux-foundation/view/122254-exam-kcna-topic-1-question-2-discussion/
+1,What native runtime is Open Container Initiative (OCI) compliant?,"A. runC
+B. runV
+C. kata-containers
+D. gvisor",https://www.examtopics.com/discussions/linux-foundation/view/122253-exam-kcna-topic-1-question-1-discussion/
+76,How do you perform a command in a running container of a Pod?,"A. kubectl exec --
+B. docker exec
+C. kubectl run --
+D. kubectl attach -i",https://www.examtopics.com/discussions/linux-foundation/view/136713-exam-kcna-topic-1-question-76-discussion/
+74,What are the most important resources to guarantee the performance of an etcd cluster?,"A. CPU and disk capacity.
+B. Network throughput and disk I/O.
+C. CPU and RAM memory.
+D. Network throughput and CPU.",https://www.examtopics.com/discussions/linux-foundation/view/127942-exam-kcna-topic-1-question-74-discussion/
+60,"What Kubernetes component handles network communications inside and outside of a cluster, using operating system packet filtering if available?","A. kube-proxy
+B. kubelet
+C. etcd
+D. kube-controller-manager",https://www.examtopics.com/discussions/linux-foundation/view/135372-exam-kcna-topic-1-question-60-discussion/
+136,Which of the following commands lists all defined variables and functions within Bash?,"A. env
+B. set
+C. env -a
+D. echo $ENV",https://www.examtopics.com/discussions/linux-foundation/view/142980-exam-lfcs-topic-1-question-136-discussion/
+206,Which of the following keywords can be used in the file /etc/nsswitch.conf to specify a source for host name lookups? (Choose TWO correct answers.),"A. resolv
+B. dns
+C. remote
+D. files
+E. hosts",https://www.examtopics.com/discussions/linux-foundation/view/142912-exam-lfcs-topic-1-question-206-discussion/
+199,Which of the following details is NOT provided in any output from the netstat utility?,"A. broadcast services
+B. interface statistics
+C. masquerading connections
+D. network connections
+E. routing tables",https://www.examtopics.com/discussions/linux-foundation/view/142909-exam-lfcs-topic-1-question-199-discussion/
+178,Which of the following are syslog facilities? (Choose TWO correct answers.),"A. local7
+B. mail
+C. advanced
+D. postmaster
+E. remote",https://www.examtopics.com/discussions/linux-foundation/view/142908-exam-lfcs-topic-1-question-178-discussion/
+171,What is NOT contained in the locale setting of the operating system?,"A. currency symbol
+B. language
+C. timezone
+D. thousands separator",https://www.examtopics.com/discussions/linux-foundation/view/142907-exam-lfcs-topic-1-question-171-discussion/
+158,"In case neither cron.allow nor cron.deny exist in /etc/, which of the following is true?","A. Without additional configuration, no users may have user specific crontabs.
+B. Without additional configuration, all users may have user specific crontabs.
+C. The cron daemon will refuse to start and report missing files in the system's logfile.
+D. When a user creates a user specific crontab the system administrator must approve it explicitly.",https://www.examtopics.com/discussions/linux-foundation/view/142905-exam-lfcs-topic-1-question-158-discussion/
+152,SIMULATION - Which file specifies the user accounts that can NOT submit jobs via at or batch? (Provide the full path and filename),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/142904-exam-lfcs-topic-1-question-152-discussion/
+132,How can the existing environment variable FOOBAR be suppressed for the execution of the script./myscript only?,"A. unset -v FOOBAR;./myscript
+B. set -a FOOBAR="""";./myscript
+C. env -u FOOBAR./myscript
+D. env -i FOOBAR./myscript",https://www.examtopics.com/discussions/linux-foundation/view/142903-exam-lfcs-topic-1-question-132-discussion/
+130,"Which of the following files, when existing, affect the behavior of the Bash shell? (Choose TWO correct answers.)","A. ~/.bashconf
+B. ~/.bashrc
+C. ~/.bashdefaults
+D. ~/.bash_etc
+E. ~/.bash_profile",https://www.examtopics.com/discussions/linux-foundation/view/142902-exam-lfcs-topic-1-question-130-discussion/
+129,Which of the following commands puts the output of the command date into the shell variable mydate?,"A. mydate=""$(date)""
+B. mydate=""exec date""
+C. mydate=""$((date))""
+D. mydate=""date""
+E. mydate=""${date}""",https://www.examtopics.com/discussions/linux-foundation/view/142901-exam-lfcs-topic-1-question-129-discussion/
+121,What output will the following command sequence produce? echo '1 2 3 4 5 6' | while read a b c; do echo result: $c $b $a; done,"A. result: 3 4 5 6 2 1
+B. result: 1 2 3 4 5 6
+C. result: 6 5 4
+D. result: 6 5 4 3 2 1
+E. result: 3 2 1",https://www.examtopics.com/discussions/linux-foundation/view/45558-exam-lfcs-topic-1-question-121-discussion/
+119,What do the permissions -rwSr-xr-x mean for a binary file when it is executed as a command?,"A. The command is SetUID and it will be executed with the effective rights of the owner.
+B. The command will be executed with the effective rights of the group instead of the owner.
+C. The execute flag is not set for the owner. Therefore the SetUID flag is ignored.
+D. The command will be executed with the effective rights of the owner and group.",https://www.examtopics.com/discussions/linux-foundation/view/106449-exam-lfcs-topic-1-question-119-discussion/
+118,Which of the following commands shows the definition of a given shell command?,"A. where
+B. stat
+C. type
+D. case",https://www.examtopics.com/discussions/linux-foundation/view/142899-exam-lfcs-topic-1-question-118-discussion/
+116,Which of the following commands set the sticky bit for the directory /tmp? (Choose TWO correct answers.),"A. chmod +s /tmp
+B. chmod +t /tmp
+C. chmod 1775 /tmp
+D. chmod 4775 /tmp
+E. chmod 2775 /tmp",https://www.examtopics.com/discussions/linux-foundation/view/125837-exam-lfcs-topic-1-question-116-discussion/
+108,Which of the following commands will change the quota for a specific user?,"A. edquota
+B. repquota
+C. quota -e
+D. quota",https://www.examtopics.com/discussions/linux-foundation/view/142898-exam-lfcs-topic-1-question-108-discussion/
+96,What does the command mount -a do?,"A. It ensures that all file systems listed with the option noauto in /etc/fstab are mounted.
+B. It shows all mounted file systems that have been automatically mounted.
+C. It opens an editor with root privileges and loads /etc/fstab for editing.
+D. It ensures that all file systems listed with the option auto in /etc/fstab are mounted.
+E. It ensures that all file systems listed in /etc/fstab are mounted regardless of their options.",https://www.examtopics.com/discussions/linux-foundation/view/57590-exam-lfcs-topic-1-question-96-discussion/
+91,"After successfully creating a hard link called bar to the ordinary file foo, foo is deleted from the filesystem. Which of the following describes the resulting situation?","A. foo and bar would both be removed.
+B. foo would be removed while bar would remain accessible.
+C. foo would be removed. bar would still exist but would be unusable.
+D. Both foo and bar would remain accessible.
+E. The user is prompted whether bar should be removed, too.",https://www.examtopics.com/discussions/linux-foundation/view/142897-exam-lfcs-topic-1-question-91-discussion/
+89,Which of the following commands can be used to determine how long the system has been running? (Choose TWO correct answers.),"A. uptime
+B. up
+C. top
+D. uname -u
+E. time –up",https://www.examtopics.com/discussions/linux-foundation/view/142896-exam-lfcs-topic-1-question-89-discussion/
+81,What happens after issuing the command vi without any additional parameters?,"A. vi starts and loads the last file used and moves the cursor to the position where vi was when it last exited.
+B. vi starts and requires the user to explicitly either create a new or load an existing file.
+C. vi exits with an error message as it cannot be invoked without a file name to operate on.
+D. vi starts in command mode and opens a new empty file.
+E. vi starts and opens a new file which is filled with the content of the vi buffer if the buffer contains text.",https://www.examtopics.com/discussions/linux-foundation/view/142895-exam-lfcs-topic-1-question-81-discussion/
+79,Which of the following commands prints a list of usernames (first column) and their primary group (fourth column) from the /etc/passwd file?,"A. fmt -f 1,4 /etc/passwd
+B. split -c 1,4 /etc/passwd
+C. cut -d : -f 1,4 /etc/passwd
+D. paste -f 1,4 /etc/passwd",https://www.examtopics.com/discussions/linux-foundation/view/142894-exam-lfcs-topic-1-question-79-discussion/
+78,Which of the following commands will print the last 10 lines of a text file to the standard output?,"A. cat -n 10 filename
+B. dump -n 10 filename
+C. head -n 10 filename
+D. tail -n 10 filename",https://www.examtopics.com/discussions/linux-foundation/view/142893-exam-lfcs-topic-1-question-78-discussion/
+75,"When starting a program with the nice command without any additional parameters, which nice level is set for the resulting process?","A. -10
+B. 0
+C. 10
+D. 20",https://www.examtopics.com/discussions/linux-foundation/view/68327-exam-lfcs-topic-1-question-75-discussion/
+74,Which of the following sequences in the vi editor saves the opened document and exits the editor? (Choose TWO correct answers.),"A. esc ZZ
+B. ctrl :w!
+C. esc zz
+D. esc :wq!
+E. ctrl XX",https://www.examtopics.com/discussions/linux-foundation/view/142892-exam-lfcs-topic-1-question-74-discussion/
+72,Which of the following shell redirections will write standard output and standard error output to a file named filename?,"A. 2>&1 >filename
+B. >filename 2>&1
+C. 1>&2>filename
+D. >>filename
+E. 1&2>filename",https://www.examtopics.com/discussions/linux-foundation/view/112390-exam-lfcs-topic-1-question-72-discussion/
+70,Regarding the command: nice -5 /usr/bin/prog Which of the following statements is correct?,"A. /usr/bin/prog is executed with a nice level of -5.
+B. /usr/bin/prog is executed with a nice level of 5.
+C. /usr/bin/prog is executed with a priority of -5.
+D. /usr/bin/prog is executed with a priority of 5.",https://www.examtopics.com/discussions/linux-foundation/view/39242-exam-lfcs-topic-1-question-70-discussion/
+64,SIMULATION - Which Bash environment variable defines in which file the user history is stored when exiting a Bash process? (Specify ONLY the variable name.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/142891-exam-lfcs-topic-1-question-64-discussion/
+72,Which of the following is a responsibility of the governance board of an open source project?,"A. Decide about the marketing strategy of the project.
+B. Review the pull requests in the main branch.
+C. Outline the project's “terms of engagement”.
+D. Define the license to be used in the project.",https://www.examtopics.com/discussions/linux-foundation/view/141758-exam-kcna-topic-1-question-72-discussion/
+41,What are the characteristics for building every cloud-native application?,"A. Resiliency, Operability, Observability, Availability
+B. Resiliency, Containerd, Observability, Agility
+C. Kubernetes, Operability, Observability, Availability
+D. Resiliency, Agility, Operability, Observability",https://www.examtopics.com/discussions/linux-foundation/view/131468-exam-kcna-topic-1-question-41-discussion/
+51,How are ReplicaSets and Deployments related?,"A. Deployments manage ReplicaSets and provide declarative updates to Pods.
+B. ReplicaSets manage stateful applications, Deployments manage stateless applications.
+C. Deployments are runtime instances of ReplicaSets.
+D. ReplicaSets are subsets of Jobs and CronJobs which use imperative Deployments.",https://www.examtopics.com/discussions/linux-foundation/view/117929-exam-kcna-topic-1-question-51-discussion/
+44,"What component enables end users, different parts of the Kubernetes cluster, and external components to communicate with one another?","A. kubectl
+B. AWS Management Console
+C. Kubernetes API
+D. Google Cloud SDK",https://www.examtopics.com/discussions/linux-foundation/view/140799-exam-kcna-topic-1-question-44-discussion/
+43,Kubernetes supports multiple virtual clusters backed by the same physical cluster. These virtual clusters are called:,"A. namespaces
+B. containers
+C. hypervisors
+D. cgroups",https://www.examtopics.com/discussions/linux-foundation/view/132540-exam-kcna-topic-1-question-43-discussion/
+40,"Scenario: You have a Kubernetes cluster hosted in a public cloud provider. When trying to create a Service of type LoadBalancer, the external-ip is stuck in the ""Pending"" state. Which Kubernetes component is failing in this scenario?","A. Cloud Controller Manager
+B. Load Balancer Manager
+C. Cloud Architecture Manager
+D. Cloud Load Balancer Manager",https://www.examtopics.com/discussions/linux-foundation/view/130945-exam-kcna-topic-1-question-40-discussion/
+39,What is the main role of the Kubernetes DNS within a cluster?,"A. Acts as a DNS server for virtual machines that are running outside the cluster.
+B. Provides a DNS as a Service, allowing users to create zones and registries for domains that they own.
+C. Allows Pods running in dual stack to convert IPv6 calls into IPv4 calls.
+D. Provides consistent DNS Names for Pods and Services for workloads that need to communicate with each other.",https://www.examtopics.com/discussions/linux-foundation/view/136913-exam-kcna-topic-1-question-39-discussion/
+36,What is a probe within Kubernetes?,"A. A monitoring mechanism of the Kubernetes API.
+B. A pre-operational scope issued by the kubectl agent.
+C. A diagnostic performed periodically by the kubelet on a container.
+D. A logging mechanism of the Kubernetes API.",https://www.examtopics.com/discussions/linux-foundation/view/136912-exam-kcna-topic-1-question-36-discussion/
+6,"Let's assume that an organization needs to process large amounts of data in bursts, on a cloud-based Kubernetes cluster. For instance: each Monday morning, they need to run a batch of 1000 compute jobs of 1 hour each, and these jobs must be completed by Monday night. What's going to be the most cost-effective method?","A. Run a group of nodes with the exact required size to complete the batch on time, and use a combination of taints, tolerations, and nodeSelectors to reserve these nodes to the batch jobs.
+B. Leverage the Kubernetes Cluster Autoscaler to automatically start and stop nodes as they're needed.
+C. Commit to a specific level of spending to get discounted prices (with e.g. “reserved instances” or similar mechanisms).
+D. Use PriorityСlasses so that the weekly batch job gets priority over other workloads running on the cluster, and can be completed on time.",https://www.examtopics.com/discussions/linux-foundation/view/119233-exam-kcna-topic-1-question-6-discussion/
+65,Which Kubernetes resource uses immutable: true boolean field?,"A. Deployment
+B. Pod
+C. ConfigMap
+D. ReplicaSet",https://www.examtopics.com/discussions/linux-foundation/view/127939-exam-kcna-topic-1-question-65-discussion/
+82,Why is Cloud-Native Architecture important?,"A. Cloud Native Architecture revolves around containers, microservices and pipelines.
+B. Cloud Native Architecture removes constraints to rapid innovation.
+C. Cloud Native Architecture is modern for application deployment and pipelines.
+D. Cloud Native Architecture is a bleeding edge technology and service.",https://www.examtopics.com/discussions/linux-foundation/view/139560-exam-kcna-topic-1-question-82-discussion/
+63,Which of these commands is used to retrieve the documentation and field definitions for a Kubernetes resource?,"A. kubectl explain
+B. kubectl api-resources
+C. kubectl get --help
+D. kubectl show",https://www.examtopics.com/discussions/linux-foundation/view/139400-exam-kcna-topic-1-question-63-discussion/
+47,Which of the following systems is NOT compatible with the CRI runtime interface standard?,"A. CRI-0
+B. dockershim
+C. systemd
+D. containerd",https://www.examtopics.com/discussions/linux-foundation/view/133402-exam-kcna-topic-1-question-47-discussion/
+224,SIMULATION - What argument to the -type option of find will match files that are symbolic links? (Specify only the argument and no other options or words.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/137538-exam-lfcs-topic-1-question-224-discussion/
+122,"When the command echo $ outputs 1, which of the following statements is true?","A. It is the process ID of the echo command.
+B. It is the process ID of the current shell.
+C. It is the exit value of the command executed immediately before echo.
+D. It is the exit value of the echo command.",https://www.examtopics.com/discussions/linux-foundation/view/17529-exam-lfcs-topic-1-question-122-discussion/
+20,Which is the correct kubectl command to display logs in real time?,"A. kubectl logs -p test-container-1
+B. kubectl logs -c test-container-1
+C. kubectl logs -l test-container-1
+D. kubectl logs -f test-container-1",https://www.examtopics.com/discussions/linux-foundation/view/119241-exam-kcna-topic-1-question-20-discussion/
+32,"Which storage operator in Kubernetes can help the system to self-scale, self-heal, etc?","A. Rook
+B. Kubernetes
+C. Helm
+D. Container Storage Interface (CSI)",https://www.examtopics.com/discussions/linux-foundation/view/137317-exam-kcna-topic-1-question-32-discussion/
+18,Which of the following workload require a headless service while deploying into the namespace?,"A. StatefulSet
+B. CronJob
+C. Deployment
+D. DaemonSet",https://www.examtopics.com/discussions/linux-foundation/view/119240-exam-kcna-topic-1-question-18-discussion/
+14,Which of the following statements is correct concerning Open Policy Agent (OPA)?,"A. The policies must be written in Python language.
+B. Kubernetes can use it to validate requests and apply policies.
+C. Policies can only be tested when published.
+D. It cannot be used outside Kubernetes.",https://www.examtopics.com/discussions/linux-foundation/view/119237-exam-kcna-topic-1-question-14-discussion/
+13,Kubernetes ___ allows you to automatically manage the number of nodes in your cluster to meet demand.,"A. Node Autoscaler
+B. Cluster Autoscaler
+C. Horizontal Pod Autoscaler
+D. Vertical Pod Autoscaler",https://www.examtopics.com/discussions/linux-foundation/view/119236-exam-kcna-topic-1-question-13-discussion/
+10,What function does kube-proxy provide to a cluster?,"A. Implementing the Ingress resource type for application traffic.
+B. Forwarding data to the correct endpoints for Services.
+C. Managing data egress from the cluster nodes to the network.
+D. Managing access to the Kubernetes API.",https://www.examtopics.com/discussions/linux-foundation/view/118203-exam-kcna-topic-1-question-10-discussion/
+9,What default level of protection is applied to the data in Secrets in the Kubernetes API?,"A. The values use AES Symmetric Encryption
+B. The values are stored in plain text
+C. The values are encoded with SHA256 hashes
+D. The values are base64 encoded",https://www.examtopics.com/discussions/linux-foundation/view/117703-exam-kcna-topic-1-question-9-discussion/
+8,CI/CD stands for:,"A. Continuous Information / Continuous Development
+B. Continuous Integration / Continuous Development
+C. Cloud Integration / Cloud Development
+D. Continuous Integration / Continuous Deployment",https://www.examtopics.com/discussions/linux-foundation/view/122258-exam-kcna-topic-1-question-8-discussion/
+40,"In Bash, inserting 1>&2 after a command redirects","A. standard error to standard input.
+B. standard input to standard error.
+C. standard output to standard error.
+D. standard error to standard output.
+E. standard output to standard input.",https://www.examtopics.com/discussions/linux-foundation/view/93614-exam-lfcs-topic-1-question-40-discussion/
+38,What feature must a CNI support to control specific traffic flows for workloads running in Kubernetes?,"A. Border Gateway Protocol
+B. IP Address Management
+C. Pod Security Policy
+D. Network Policies",https://www.examtopics.com/discussions/linux-foundation/view/135366-exam-kcna-topic-1-question-38-discussion/
+34,Which of the following would fall under the responsibilities of an SRE?,"A. Developing a new application feature.
+B. Creating a monitoring baseline for an application.
+C. Submitting a budget for running an application in a cloud.
+D. Writing policy on how to submit a code change.",https://www.examtopics.com/discussions/linux-foundation/view/136911-exam-kcna-topic-1-question-34-discussion/
+33,What fields must exist in any Kubernetes object (e.g. YAML) file?,"A. apiVersion, kind, metadata
+B. kind, namespace, data
+C. apiVersion, metadata, namespace
+D. kind, metadata, data",https://www.examtopics.com/discussions/linux-foundation/view/136909-exam-kcna-topic-1-question-33-discussion/
+30,What best describes cloud native service discovery?,"A. It's a mechanism for applications and microservices to locate each other on a network.
+B. It's a procedure for discovering a MAC address, associated with a given IP address.
+C. It's used for automatically assigning IP addresses to devices connected to the network.
+D. It's a protocol that turns human-readable domain names into IP addresses on the Internet.",https://www.examtopics.com/discussions/linux-foundation/view/136908-exam-kcna-topic-1-question-30-discussion/
+29,Which statement about Ingress is correct?,"A. Ingress provides a simple way to track network endpoints within a cluster.
+B. Ingress is a Service type like NodePort and ClusterIP.
+C. Ingress is a construct that allows you to specify how a Pod is allowed to communicate.
+D. Ingress exposes routes from outside the cluster to services in the cluster.",https://www.examtopics.com/discussions/linux-foundation/view/128780-exam-kcna-topic-1-question-29-discussion/
+28,What is the common standard for Service Meshes?,"A. Service Mesh Specification (SMS)
+B. Service Mesh Technology (SMT)
+C. Service Mesh Interface (SMI)
+D. Service Mesh Function (SMF)",https://www.examtopics.com/discussions/linux-foundation/view/136907-exam-kcna-topic-1-question-28-discussion/
+27,Which group of container runtimes provides additional sandboxed isolation and elevated security?,"A. rune, cgroups
+B. docker, containerd
+C. runsc, kata
+D. crun, cri-o",https://www.examtopics.com/discussions/linux-foundation/view/135364-exam-kcna-topic-1-question-27-discussion/
+25,The Kubernetes project work is carried primarily by SIGs. What does SIG stand for?,"A. Special Interest Group
+B. Software Installation Guide
+C. Support and Information Group
+D. Strategy Implementation Group",https://www.examtopics.com/discussions/linux-foundation/view/119246-exam-kcna-topic-1-question-25-discussion/
+24,We can extend the Kubernetes API with Kubernetes API Aggregation Layer and CRDs. What is CRD?,"A. Custom Resource Definition
+B. Custom Restricted Definition
+C. Customized RUST Definition
+D. Custom RUST Definition",https://www.examtopics.com/discussions/linux-foundation/view/119245-exam-kcna-topic-1-question-24-discussion/
+23,Which Kubernetes resource workload ensures that all (or some) nodes run a copy of a Pod?,"A. ReplicaSet
+B. StatefulSet
+C. DaemonSet
+D. Deployment",https://www.examtopics.com/discussions/linux-foundation/view/119244-exam-kcna-topic-1-question-23-discussion/
+22,What is the core functionality of GitOps tools like Argo CD and Flux?,"A. They track production changes made by a human in a Git repository and generate a human-readable audit trail.
+B. They replace human operations with an agent that tracks Git commands.
+C. They automatically create pull requests when dependencies are outdated.
+D. They continuously compare the desired state in Git with the actual production state and notify or act upon differences.",https://www.examtopics.com/discussions/linux-foundation/view/120919-exam-kcna-topic-1-question-22-discussion/
+21,How to load and generate data required before the Pod startup?,"A. Use an init container with shared file storage.
+B. Use a PVC volume.
+C. Use a sidecar container with shared volume.
+D. Use another pod with a PVC.",https://www.examtopics.com/discussions/linux-foundation/view/119242-exam-kcna-topic-1-question-21-discussion/
+19,What is Helm?,"A. An open source dashboard for Kubernetes.
+B. A package manager for Kubernetes applications.
+C. A custom scheduler for Kubernetes.
+D. An end to end testing project for Kubernetes applications.",https://www.examtopics.com/discussions/linux-foundation/view/119239-exam-kcna-topic-1-question-19-discussion/
+4,What is the purpose of the kubelet component within a Kubernetes cluster?,"A. A dashboard for Kubernetes Clusters that allows management and troubleshooting of applications.
+B. A network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
+C. A component that watches for newly created Pods with no assigned node, and selects a node for them to run on.
+D. An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.",https://www.examtopics.com/discussions/linux-foundation/view/122256-exam-kcna-topic-1-question-4-discussion/
+31,What components are common in a service mesh?,"A. tracing and log storage
+B. circuit breaking and Pod scheduling
+C. data plane and runtime plane
+D. service proxy and control plane",https://www.examtopics.com/discussions/linux-foundation/view/128626-exam-kcna-topic-1-question-31-discussion/
+7,What is a Kubernetes service with no cluster IP address called?,"A. Headless Service
+B. Nodeless Service
+C. IPLess Service
+D. Specless Service",https://www.examtopics.com/discussions/linux-foundation/view/119235-exam-kcna-topic-1-question-7-discussion/
+78,How does dynamic storage provisioning work?,"A. A user requests dynamically provisioned storage by including an existing storage class in their PersistentVolumeClaim.
+B. An administrator creates a storage class and includes it in their pod YAML definition file without creating a PersistentVolumeClaim.
+C. A pod requests dynamically provisioned storage by including a storage class and the pod name in their PersistentVolumeClaim.
+D. An administrator creates a PersistentVolume and includes the name of the PersistentVolume in their pod YAML definition file.",https://www.examtopics.com/discussions/linux-foundation/view/135377-exam-kcna-topic-1-question-78-discussion/
+73,What is the role of a NetworkPolicy in Kubernetes?,"A. The ability to cryptic and obscure all traffic.
+B. The ability to classify the Pods as isolated and non isolated.
+C. The ability to prevent loopback or incoming host traffic.
+D. The ability to log network security events.",https://www.examtopics.com/discussions/linux-foundation/view/133487-exam-kcna-topic-1-question-73-discussion/
+66,Which statement about the Kubernetes network model is correct?,"A. Pods can only communicate with Pods exposed via a Service.
+B. Pods can communicate with all Pods without NAT.
+C. The Pod IP is only visible inside a Pod.
+D. The Service IP is used for the communication between Services.",https://www.examtopics.com/discussions/linux-foundation/view/135374-exam-kcna-topic-1-question-66-discussion/
+55,What is the name of the Kubernetes resource used to expose an application?,"A. Port
+B. Service
+C. DNS
+D. Deployment",https://www.examtopics.com/discussions/linux-foundation/view/135370-exam-kcna-topic-1-question-55-discussion/
+97,Which of the following will view the snapshot of previously terminated ruby container logs from Pod web-1?,"A. kubectl logs -p -c ruby web-1
+B. kubectl logs -c ruby web-1
+C. kubectl logs -p ruby web-1
+D. kubectl logs -p -c web-1 ruby",https://www.examtopics.com/discussions/linux-foundation/view/129525-exam-kcna-topic-1-question-97-discussion/
+11,How long should a stable API element in Kubernetes be supported (at minimum) after deprecation?,"A. 9 months
+B. 24 months
+C. 12 months
+D. 6 months",https://www.examtopics.com/discussions/linux-foundation/view/118205-exam-kcna-topic-1-question-11-discussion/
+12,What is the name of the lightweight Kubernetes distribution built for IoT and edge computing?,"A. OpenShift
+B. k3s
+C. RKE
+D. k1s",https://www.examtopics.com/discussions/linux-foundation/view/118206-exam-kcna-topic-1-question-12-discussion/
+35,What are the initial namespaces that Kubernetes starts with?,"A. default, kube-system, kube-public, kube-node-lease
+B. default, system, kube-public
+C. kube-default, kube-system, kube-main, kube-node-lease
+D. kube-default, system, kube-main, kube-primary",https://www.examtopics.com/discussions/linux-foundation/view/132343-exam-kcna-topic-1-question-35-discussion/
+17,"After modifying GNU GRUB's configuration file, which command must be run for the changes to take effect?","A. kill -HUP $(pidof grub)
+B. grub-install
+C. grub
+D. No action is required",https://www.examtopics.com/discussions/linux-foundation/view/43638-exam-lfcs-topic-1-question-17-discussion/
+16,Which of the following options for the kernel's command line changes the systemd boot target to rescue.target instead of the default target?,"A. systemd.target=rescue.target
+B. systemd.runlevel=rescue.target
+C. systemd.service=rescue.target
+D. systemd.default=rescue.target
+E. systemd.unit=rescue.target",https://www.examtopics.com/discussions/linux-foundation/view/43637-exam-lfcs-topic-1-question-16-discussion/
+26,Which of the following is correct when talking about mount points?,"A. Every existing directory can be used as a mount point.
+B. Only empty directories can be used as a mount point.
+C. Directories need to have the SetUID flag set to be used as a mount point.
+D. Files within a directory are deleted when the directory is used as a mount point.",https://www.examtopics.com/discussions/linux-foundation/view/61906-exam-lfcs-topic-1-question-26-discussion/
+257,What is the output of the following command? for token in a b c; do echo -n ${token}; done,"A. anbncn
+B. abc
+C. $token$token$token
+D. {a}{b}{c}
+E. a b c",https://www.examtopics.com/discussions/linux-foundation/view/131395-exam-lfcs-topic-1-question-257-discussion/
+245,"What is the output of the following command sequence? for token in a b c; do echo -n ""$token ""; done","A. anbncn
+B. a b c
+C. ""a "" ""b "" ""c ""
+D. token token token
+E. abc",https://www.examtopics.com/discussions/linux-foundation/view/29726-exam-lfcs-topic-1-question-245-discussion/
+232,Which of the following find commands will print out a list of files owned by root and with the SUID bit set in /usr?,"A. find /usr -uid 0 -perm +4000
+B. find -user root +mode +s /usr
+C. find -type suid -username root -d /usr
+D. find /usr -ls \*s\* -u root
+E. find /usr -suid -perm +4000",https://www.examtopics.com/discussions/linux-foundation/view/95039-exam-lfcs-topic-1-question-232-discussion/
+55,What is the default nice level when a process is started using the nice command?,"A. -10
+B. 10
+C. 20
+D. 0",https://www.examtopics.com/discussions/linux-foundation/view/44763-exam-lfcs-topic-1-question-55-discussion/
+48,A user accidentally created the subdirectory \dir in his home directory. Which of the following commands will remove that directory?,"A. rmdir '~/\dir'
+B. rmdir ""~/\dir""
+C. rmdir ~/'dir'
+D. rmdir ~/\dir
+E. rmdir ~/\\dir",https://www.examtopics.com/discussions/linux-foundation/view/57561-exam-lfcs-topic-1-question-48-discussion/
+198,Which of the following commands will help identify a broken router between the local and the remote machine?,"A. ps
+B. netstat
+C. nslookup
+D. ifconfig
+E. traceroute",https://www.examtopics.com/discussions/linux-foundation/view/2039-exam-lfcs-topic-1-question-198-discussion/
+240,Which of the following commands connects to the remote host example.com which has OpenSSH listening on TCP port 2222? (Choose TWO correct answers.),"A. ssh --port 2222 example.com
+B. ssh -p 2222 example.com
+C. ssh -o Port=2222 example.com
+D. ssh -o GatewayPort=2222 example.com
+E. ssh example.com:2222",https://www.examtopics.com/discussions/linux-foundation/view/130268-exam-lfcs-topic-1-question-240-discussion/
+214,Which of the following IPv4 networks are reserved by IANA for private address assignment and private routing? (Choose THREE correct answers.),"A. 127.0.0.0/8
+B. 10.0.0.0/8
+C. 169.255.0.0/16
+D. 172.16.0.0/12
+E. 192.168.0.0/16",https://www.examtopics.com/discussions/linux-foundation/view/130266-exam-lfcs-topic-1-question-214-discussion/
+166,Which of the following files assigns a user to its primary group?,"A. /etc/pgroup
+B. /etc/shadow
+C. /etc/group
+D. /etc/passwd
+E. /etc/gshadow",https://www.examtopics.com/discussions/linux-foundation/view/130260-exam-lfcs-topic-1-question-166-discussion/
+148,"For accessibility assistance, which of the following programs is an on-screen keyboard?","A. xkb
+B. atkb
+C. GOK
+D. xOSK",https://www.examtopics.com/discussions/linux-foundation/view/130259-exam-lfcs-topic-1-question-148-discussion/
+134,What output will the following command produce? seq 1 5 20,"A. 1
+B. 1
+C. 1
+D. 2
+E. 5",https://www.examtopics.com/discussions/linux-foundation/view/8100-exam-lfcs-topic-1-question-134-discussion/
+128,"After issuing: function myfunction { echo $1 $2 ; } in Bash, which output does: myfunction A B C Produce?","A. A B
+B. A B C
+C. A C
+D. B C
+E. C B A",https://www.examtopics.com/discussions/linux-foundation/view/130256-exam-lfcs-topic-1-question-128-discussion/
+125,What output will the command seq 10 produce?,"A. A continuous stream of numbers increasing in increments of 10 until stopped.
+B. The numbers 1 through 10 with one number per line.
+C. The numbers 0 through 9 with one number per line.
+D. The number 10 to standard output.",https://www.examtopics.com/discussions/linux-foundation/view/130255-exam-lfcs-topic-1-question-125-discussion/
+165,Which of the following crontab entries will execute myscript at 30 minutes past every hour on Sundays?,"A. 0 * * * 30 myscript
+B. 30 * * * 6 myscript
+C. 30 0 * * 0 myscript
+D. 30 0-23 * * 0 myscript
+E. 0 0-23 * * 30 myscript",https://www.examtopics.com/discussions/linux-foundation/view/106538-exam-lfcs-topic-1-question-165-discussion/
+218,Given the following routing table: How would an outgoing packet to the destination 192.168.2.150 be handled?,"A. It would be passed to the default router 192.168.178.1 on wlan0.
+B. It would be directly transmitted on the device eth0.
+C. It would be passed to the default router 255.255.255.0 on eth0.
+D. It would be directly transmitted on the device wlan0.
+E. It would be passed to the router 192.168.1.1 on eth0.",https://www.examtopics.com/discussions/linux-foundation/view/8185-exam-lfcs-topic-1-question-218-discussion/
+85,Which are the two primary modes for Service discovery within a Kubernetes cluster?,"A. Environment variables and DNS
+B. API Calls and LDAP
+C. Labels and Radius
+D. Selectors and DHCP",https://www.examtopics.com/discussions/linux-foundation/view/128782-exam-kcna-topic-1-question-85-discussion/
+17,Which of the following characteristics is associated with container orchestration?,"A. Application message distribution
+B. Dynamic scheduling
+C. Deploying application JAR files
+D. Virtual Machine distribution",https://www.examtopics.com/discussions/linux-foundation/view/126496-exam-kcna-topic-1-question-17-discussion/
+9,Encryption that uses both a private key and public key is known as what?,"A. Key Pair Encryption (symmetric cryptography)
+B. HMAC Cryptography (hash based message authentication)
+C. Public Key Cryptography (asymmetric cryptography)
+D. DPE (dual-phased hybrid encryption)",https://www.examtopics.com/discussions/linux-foundation/view/126929-exam-lfca-topic-1-question-9-discussion/
+16,"In which framework do the developers no longer have to deal with capacity, deployments, scaling and fault tolerance, and OS?","A. Docker Swam
+B. Kubernetes
+C. Mesos
+D. Serverless",https://www.examtopics.com/discussions/linux-foundation/view/122259-exam-kcna-topic-1-question-16-discussion/
+15,"In a cloud native world, what does the IaC abbreviation stands for?","A. Infrastructure and Code
+B. Infrastructure as Code
+C. Infrastructure above Code
+D. Infrastructure across Code",https://www.examtopics.com/discussions/linux-foundation/view/119238-exam-kcna-topic-1-question-15-discussion/
+1,"Which of the following commands can be used to lock a user’s account so that they cannot log into a Linux server without removing any files, folders, or data?","A. lock
+B. usermod
+C. userdel
+D. chmod",https://www.examtopics.com/discussions/linux-foundation/view/123018-exam-lfca-topic-1-question-1-discussion/
+8,What does LVM stand for?,"A. Logical Virtualization Manager
+B. Linux Volume Manager
+C. Logical Volume Manager
+D. Linux Virtualization Manager",https://www.examtopics.com/discussions/linux-foundation/view/123751-exam-lfca-topic-1-question-8-discussion/
+7,Which utility is used to create public and private key pairs for SSH authentication?,"A. adduser
+B. ssh-keygen
+C. keygen
+D. ssh",https://www.examtopics.com/discussions/linux-foundation/view/123750-exam-lfca-topic-1-question-7-discussion/
+6,"A software development team uses a single physical server for testing the latest code in multiple environments: development, pre-production, and production. What is the recommended approach to maintain the basic security of these environments?","A. Assign different developers on the team to work on test, pre-prod, and prod code.
+B. Implement peer review for all the changes deployed into any of the environments.
+C. Develop and deploy each environment with its own set of software tools.
+D. Use different user/group IDs for deploying and running workload in each environment.",https://www.examtopics.com/discussions/linux-foundation/view/123749-exam-lfca-topic-1-question-6-discussion/
+5,A company’s IT associate lists the contents of a directory and sees this line: -rwsr-x--x 2 bob sales 2047 Oct 10 09:44 sales-report What happens when Alice from the accounting team tries to execute this file?,"A. The script executes using Bob’s account.
+B. The script executes, but Alice cannot see the results.
+C. The script executes and Bob is notified.
+D. The script fails to execute; Alice is not on the sales team.",https://www.examtopics.com/discussions/linux-foundation/view/122433-exam-lfca-topic-1-question-5-discussion/
+3,An IT team is currently implementing a custom software platform to address some key needs of the company. Which of the following is considered a functional requirement?,"A. Identifying the purpose of the proposed system
+B. Identifying the users of the proposed system
+C. Identifying the development methodology
+D. Identifying the technology stack of the proposed system",https://www.examtopics.com/discussions/linux-foundation/view/123748-exam-lfca-topic-1-question-3-discussion/
+4,A server on the network is unreachable. What is the best method to verify connectivity between your computer and the remote server?,"A. lookup
+B. find
+C. ping
+D. netstat",https://www.examtopics.com/discussions/linux-foundation/view/123747-exam-lfca-topic-1-question-4-discussion/
+2,Which of the following technologies is supported by the majority of cloud providers in order to support the orchestration of containerized applications?,"A. Kubernetes
+B. Vagrant
+C. Ansible
+D. Terraform",https://www.examtopics.com/discussions/linux-foundation/view/123745-exam-lfca-topic-1-question-2-discussion/
+26,"What is the order of 4C’s in Cloud Native Security, starting with the layer that a user has the most control over?","A. Cloud -> Container -> Cluster -> Code
+B. Container -> Cluster -> Code -> Cloud
+C. Cluster -> Container -> Code -> Cloud
+D. Code -> Container -> Cluster -> Cloud",https://www.examtopics.com/discussions/linux-foundation/view/119247-exam-kcna-topic-1-question-26-discussion/
+5,What is the default value for authorization-mode in Kubernetes API server?,"A. --authorization-mode=RBAC
+B. --authorization-mode=AlwaysAllow
+C. --authorization-mode=AlwaysDeny
+D. --authorization-mode=ABAC",https://www.examtopics.com/discussions/linux-foundation/view/119231-exam-kcna-topic-1-question-5-discussion/
+113,"Instead of supplying an explicit device in /etc/fstab for mounting, what other options may be used to identify the intended partition? (Choose TWO correct answers.)","A. FIND
+B. ID
+C. LABEL
+D. NAME
+E. UUID",https://www.examtopics.com/discussions/linux-foundation/view/112488-exam-lfcs-topic-1-question-113-discussion/
+111,What is the purpose of the Filesystem Hierarchy Standard?,"A. It is a security model used to ensure files are organized according to their permissions and accessibility.
+B. It provides unified tools to create, maintain and manage multiple filesystems in a common way.
+C. It defines a common internal structure of inodes for all compliant filesystems.
+D. It is a distribution neutral description of locations of files and directories.",https://www.examtopics.com/discussions/linux-foundation/view/112487-exam-lfcs-topic-1-question-111-discussion/
+110,Which of the following Linux filesystems preallocates a fixed number of inodes at the filesystem's make/creation time and does NOT generate them as needed? (Choose TWO correct answers.),"A. ext3
+B. JFS
+C. ext2
+D. XFS
+E. procfs",https://www.examtopics.com/discussions/linux-foundation/view/112466-exam-lfcs-topic-1-question-110-discussion/
+109,Which utility would be used to change how often a filesystem check is performed on an ext2 filesystem without losing any data stored on that filesystem?,"A. mod2fs
+B. fsck
+C. tune2fs
+D. mke2fs
+E. fixe2fs",https://www.examtopics.com/discussions/linux-foundation/view/112465-exam-lfcs-topic-1-question-109-discussion/
+104,SIMULATION - Which command is used to create and initialize the files used to store quota information? (Specify ONLY the command without any path or parameters.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/57595-exam-lfcs-topic-1-question-104-discussion/
+103,How many fields are in a syntactically correct line of /etc/fstab?,"A. 3
+B. 4
+C. 5
+D. 6
+E. 7",https://www.examtopics.com/discussions/linux-foundation/view/50351-exam-lfcs-topic-1-question-103-discussion/
+100,Which of the following commands can be used to locate programs and their corresponding man pages and configuration files?,"A. dirname
+B. which
+C. basename
+D. query
+E. whereis",https://www.examtopics.com/discussions/linux-foundation/view/112461-exam-lfcs-topic-1-question-100-discussion/
+99,"In order to display all currently mounted filesystems, which of the following commands could be used? (Choose TWO correct answers.)","A. cat /proc/self/mounts
+B. free
+C. mount
+D. lsmounts
+E. cat /proc/filesystems",https://www.examtopics.com/discussions/linux-foundation/view/112459-exam-lfcs-topic-1-question-99-discussion/
+98,Which of the following is the device file name for the second partition on the only SCSI drive?,"A. /dev/hda1
+B. /dev/sda2
+C. /dev/sd0a2
+D. /dev/sd1p2",https://www.examtopics.com/discussions/linux-foundation/view/57591-exam-lfcs-topic-1-question-98-discussion/
+95,Which of the following commands can be used to search for the executable file foo when it has been placed in a directory not included in $PATH?,"A. apropos
+B. which
+C. find
+D. query
+E. whereis",https://www.examtopics.com/discussions/linux-foundation/view/112448-exam-lfcs-topic-1-question-95-discussion/
+86,Which of the following commands prints all files and directories within the /tmp directory or its subdirectories which are also owned by the user root? (Choose TWO correct answers.),"A. find /tmp -uid root -print
+B. find -path /tmp -uid root
+C. find /tmp -user root -print
+D. find /tmp -user root
+E. find -path /tmp -user root –print",https://www.examtopics.com/discussions/linux-foundation/view/112447-exam-lfcs-topic-1-question-86-discussion/
+84,Which of the following commands determines the type of a file by using a definition database file which contains information about all common file types?,"A. magic
+B. type
+C. file
+D. pmagic
+E. hash",https://www.examtopics.com/discussions/linux-foundation/view/112446-exam-lfcs-topic-1-question-84-discussion/
+83,Which variable defines the directories in which a Bash shell searches for executable commands?,"A. BASHEXEC
+B. BASHRC
+C. PATH
+D. EXECPATH
+E. PATHRC",https://www.examtopics.com/discussions/linux-foundation/view/112445-exam-lfcs-topic-1-question-83-discussion/
+82,Which of the following command sets the Bash variable named TEST with the content FOO?,"A. set TEST=""FOO""
+B. TEST = ""FOO""
+C. var TEST=""FOO""
+D. TEST=""FOO""",https://www.examtopics.com/discussions/linux-foundation/view/106079-exam-lfcs-topic-1-question-82-discussion/
+77,"Which character, added to the end of a command, runs that command in the background as a child process of the current shell?","A. !
+B. +
+C. &
+D. %
+E. #",https://www.examtopics.com/discussions/linux-foundation/view/112399-exam-lfcs-topic-1-question-77-discussion/
+76,Which of the following commands will reduce all consecutive spaces down to a single space?,"A. tr '\s' ' ' < a.txt > b.txt
+B. tr -c ' ' < a.txt > b.txt
+C. tr -d ' ' < a.txt > b.txt
+D. tr -r ' ' '\n' < a.txt > b.txt
+E. tr -s ' ' < a.txt > b.txt",https://www.examtopics.com/discussions/linux-foundation/view/104999-exam-lfcs-topic-1-question-76-discussion/
+10,What information can the lspci command display about the system hardware? (Choose THREE correct answers.),"A. Device IRQ settings
+B. PCI bus speed
+C. System battery type
+D. Device vendor identification
+E. Ethernet MAC address",https://www.examtopics.com/discussions/linux-foundation/view/43628-exam-lfcs-topic-1-question-10-discussion/
+73,"In the vi editor, which of the following commands will copy the current line into the vi buffer?","A. c
+B. cc
+C. 1c
+D. yy
+E. 1y",https://www.examtopics.com/discussions/linux-foundation/view/68326-exam-lfcs-topic-1-question-73-discussion/
+71,Which shell command is used to continue background execution of a suspended command?,"A. &
+B. bg
+C. cont
+D. exec
+E. :&",https://www.examtopics.com/discussions/linux-foundation/view/112387-exam-lfcs-topic-1-question-71-discussion/
+69,"From a Bash shell, which of the following commands directly executes the instruction from the file /usr/local/bin/runme.sh without starting a subshell? (Please select TWO answers.)","A. source /usr/local/bin/runme.sh
+B. . /usr/local/bin/runme.sh
+C. /bin/bash /usr/local/bin/runme.sh
+D. /usr/local/bin/runme.sh
+E. run /usr/local/bin/runme.sh",https://www.examtopics.com/discussions/linux-foundation/view/44893-exam-lfcs-topic-1-question-69-discussion/
+68,Which of the following commands replaces each occurrence of 'bob' in the file letter with 'Bob' and writes the result to the file newletter?,"A. sed '/bob/Bob' letter > newletter
+B. sed s/bob/Bob/ letter < newletter
+C. sed 's/bob/Bob' letter > newletter
+D. sed 's/bob/Bob/g' letter > newletter
+E. sed 's/bob, Bob/' letter > newletter",https://www.examtopics.com/discussions/linux-foundation/view/57587-exam-lfcs-topic-1-question-68-discussion/
+63,"Which of the following files, located in the user home directory, is used to store the Bash history?","A. .bash_history
+B. .bash_histfile
+C. .history
+D. .bashrc_history
+E. .history_bash",https://www.examtopics.com/discussions/linux-foundation/view/112385-exam-lfcs-topic-1-question-63-discussion/
+61,What does the symbol within regular expressions represent?,"A. Match the preceding qualifier one or more times.
+B. Match the preceding qualifier zero or more times.
+C. Match the preceding qualifier zero or one times.
+D. Match a literal character.",https://www.examtopics.com/discussions/linux-foundation/view/36897-exam-lfcs-topic-1-question-61-discussion/
+59,Which of the following commands moves and resumes in the background the last stopped shell job?,"A. run
+B. bg
+C. fg
+D. back",https://www.examtopics.com/discussions/linux-foundation/view/112377-exam-lfcs-topic-1-question-59-discussion/
+57,What is the difference between the i and a commands of the vi editor?,"A. i (interactive) requires the user to explicitly switch between vi modes whereas a (automatic) switches modes automatically.
+B. i (insert) inserts text before the current cursor position whereas a (append) inserts text after the cursor.
+C. i (independent rows) starts every new line at the first character whereas a (aligned rows) keeps the indentation of the previous line.
+D. i (interrupt) temporarily suspends editing of a file to the background whereas a (abort) terminates editing.",https://www.examtopics.com/discussions/linux-foundation/view/44766-exam-lfcs-topic-1-question-57-discussion/
+56,What is the default action of the split command on an input file?,"A. It will break the file into new files of 1,024 byte pieces each.
+B. It will break the file into new files of 1,000 line pieces each.
+C. It will break the file into new files of 1,024 kilobyte pieces each.
+D. It will break the file into new files that are no more than 5% of the size of the original file.",https://www.examtopics.com/discussions/linux-foundation/view/44764-exam-lfcs-topic-1-question-56-discussion/
+53,"Which of the following characters can be combined with a separator string in order to read from the current input source until the separator string, which is on a separate line and without any trailing spaces, is reached?","A. <<
+B. <|
+C. !<
+D. &<",https://www.examtopics.com/discussions/linux-foundation/view/112375-exam-lfcs-topic-1-question-53-discussion/
+52,"What is the output of the following command? echo ""Hello World"" | tr -d aieou","A. Hello World
+B. eoo
+C. Hll Wrld
+D. eoo Hll Wrld",https://www.examtopics.com/discussions/linux-foundation/view/112374-exam-lfcs-topic-1-question-52-discussion/
+138,What is the purpose of the file /etc/profile?,"A. It contains the welcome message that is displayed after login.
+B. It contains security profiles defining which users are allowed to log in.
+C. It contains environment variables that are set when a user logs in.
+D. It contains default application profiles for users that run an application for the first time.",https://www.examtopics.com/discussions/linux-foundation/view/106537-exam-lfcs-topic-1-question-138-discussion/
+107,Which of the following commands creates an ext3 filesystem on /dev/sdb1? (Choose TWO correct answers.),"A. /sbin/mke2fs -j /dev/sdb1
+B. /sbin/mkfs -t ext3 /dev/sdb1
+C. /sbin/mkfs -c ext3 /dev/sdb1
+D. /sbin/mke3fs -j /dev/sdb1",https://www.examtopics.com/discussions/linux-foundation/view/106448-exam-lfcs-topic-1-question-107-discussion/
+101,Which of the following commands changes the number of days before the ext3 filesystem on /dev/sda1 has to run through a full filesystem check while booting?,"A. tune2fs -d 200 /dev/sda1
+B. tune2fs -c 200 /dev/sda1
+C. tune2fs -i 200 /dev/sda1
+D. tune2fs -n 200 /dev/sda1
+E. tune2fs --days 200 /dev/sda1",https://www.examtopics.com/discussions/linux-foundation/view/57594-exam-lfcs-topic-1-question-101-discussion/
+102,Which type of filesystem is created by mkfs when it is executed with the block device name only and without any additional parameters?,"A. ext2
+B. ext3
+C. ext4
+D. XFS
+E. VFAT",https://www.examtopics.com/discussions/linux-foundation/view/94922-exam-lfcs-topic-1-question-102-discussion/
+97,Which of the following settings for umask ensures that new files have the default permissions -rw-r----- ?,"A. 0017
+B. 0640
+C. 0038
+D. 0027",https://www.examtopics.com/discussions/linux-foundation/view/28974-exam-lfcs-topic-1-question-97-discussion/
+90,Which of the following are valid stream redirection operators within Bash? (Choose THREE correct answers.),"A. <
+B. <<<
+C. >
+D. >>>
+E. %>",https://www.examtopics.com/discussions/linux-foundation/view/106080-exam-lfcs-topic-1-question-90-discussion/
+80,Which of the following signals is sent to a process when the key combination CTRL+C is pressed on the keyboard?,"A. SIGTERM
+B. SIGINT
+C. SIGSTOP
+D. SIGKILL",https://www.examtopics.com/discussions/linux-foundation/view/106078-exam-lfcs-topic-1-question-80-discussion/
+67,Which of the following commands is used to change options and positional parameters for a running Bash?,"A. history
+B. set
+C. bashconf
+D. setsh
+E. envsetup",https://www.examtopics.com/discussions/linux-foundation/view/105779-exam-lfcs-topic-1-question-67-discussion/
+66,Which grep command will print only the lines that do not end with a / in the file foo?,"A. grep '/$' foo
+B. grep '/#' foo
+C. grep -v '/$' foo
+D. grep -v '/#' foo",https://www.examtopics.com/discussions/linux-foundation/view/57586-exam-lfcs-topic-1-question-66-discussion/
+65,Which of the following commands displays the contents of a gzip compressed tar archive?,"A. gzip archive.tgz | tar xvf -
+B. tar ztf archive.tgz
+C. gzip -d archive.tgz | tar tvf -
+D. tar cf archive.tgz",https://www.examtopics.com/discussions/linux-foundation/view/105778-exam-lfcs-topic-1-question-65-discussion/
+62,"In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be issued multiple times or applied to multiple rows?","A. By using the command :repeat followed by the number and the command.
+B. By specifying the number right in front of a command such as 4l or 2yj.
+C. By selecting all affected lines using the shift and cursor keys before applying the command.
+D. By issuing a command such as :set repetition=4 which repeats every subsequent command 4 times.",https://www.examtopics.com/discussions/linux-foundation/view/105775-exam-lfcs-topic-1-question-62-discussion/
+58,SIMULATION - Which command displays a list of all background tasks running in the current shell? (Specify ONLY the command without any path or parameters.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/105773-exam-lfcs-topic-1-question-58-discussion/
+94,Which of the following commands makes /bin/foo executable by everyone but writable only by its owner?,"A. chmod u=rwx,go=rx /bin/foo
+B. chmod o+rwx,a+rx /bin/foo
+C. chmod 577 /bin/foo
+D. chmod 775 /bin/foo",https://www.examtopics.com/discussions/linux-foundation/view/61909-exam-lfcs-topic-1-question-94-discussion/
+93,Which of the following commands changes the ownership of file.txt to the user dan and the group staff?,"A. chown dan/staff file.txt
+B. chown dan:staff file.txt
+C. chown -u dan -g staff file.txt
+D. chown dan -g staff file.txt",https://www.examtopics.com/discussions/linux-foundation/view/45527-exam-lfcs-topic-1-question-93-discussion/
+88,"When given the following command line. echo ""foo bar"" | tee bar | cat Which of the following output is created?","A. cat
+B. foo bar
+C. tee bar
+D. bar
+E. foo",https://www.examtopics.com/discussions/linux-foundation/view/57588-exam-lfcs-topic-1-question-88-discussion/
+159,Which of the following commands can remove a user from a group?,"A. grouprm
+B. groupmod
+C. passwd
+D. usergroups
+E. usermod",https://www.examtopics.com/discussions/linux-foundation/view/94934-exam-lfcs-topic-1-question-159-discussion/
+50,Which of the following commands will send output from the program myapp to both standard output (stdout) and the file file1.log?,"A. cat < myapp | cat > file1.log
+B. myapp 0>&1 | cat > file1.log
+C. myapp | cat > file1.log
+D. myapp | tee file1.log
+E. tee myapp file1.log",https://www.examtopics.com/discussions/linux-foundation/view/93621-exam-lfcs-topic-1-question-50-discussion/
+49,"In compliance with the FHS, in which of the directories are man pages found?","A. /usr/share/man
+B. /opt/man
+C. /usr/doc/
+D. /var/pkg/man
+E. /var/man",https://www.examtopics.com/discussions/linux-foundation/view/93620-exam-lfcs-topic-1-question-49-discussion/
+47,"Immediately after deleting 3 lines of text in vi and moving the cursor to a different line, which single character command will insert the deleted content below the current line?","A. i (lowercase)
+B. P (uppercase)
+C. p (lowercase)
+D. U (uppercase)
+E. u (lowercase)",https://www.examtopics.com/discussions/linux-foundation/view/93619-exam-lfcs-topic-1-question-47-discussion/
+46,What is the maximum niceness value that a regular user can assign to a process with the nice command when executing a new process?,"A. 9
+B. 19
+C. 49
+D. 99",https://www.examtopics.com/discussions/linux-foundation/view/44744-exam-lfcs-topic-1-question-46-discussion/
+45,"SIMULATION - Which signal is missing from the following command that is commonly used to instruct a daemon to reinitialize itself, including reading configuration files? killall -s _______ daemon",VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93618-exam-lfcs-topic-1-question-45-discussion/
+44,"Which of the following commands kills the process with the PID 123 but allows the process to ""clean up"" before exiting?","A. kill -PIPE 123
+B. kill -KILL 123
+C. kill -STOP 123
+D. kill -TERM 123",https://www.examtopics.com/discussions/linux-foundation/view/93617-exam-lfcs-topic-1-question-44-discussion/
+43,Which of the following statements is correct regarding the command foo 1> bar?,"A. The stdout from the command foo is appended to the file bar.
+B. The stdout from the command foo overwrites the file bar.
+C. The command foo receives its stdin from the file bar.
+D. The command foo receives its stdin from the stdout of the command bar.
+E. The stderr from the command foo is saved to the file bar.",https://www.examtopics.com/discussions/linux-foundation/view/50261-exam-lfcs-topic-1-question-43-discussion/
+42,"In a nested directory structure, which find command line option would be used to restrict the command to searching down a particular number of subdirectories?","A. -dirmax
+B. -maxdepth
+C. -maxlevels
+D. -n
+E. -s",https://www.examtopics.com/discussions/linux-foundation/view/93616-exam-lfcs-topic-1-question-42-discussion/
+41,What command will generate a list of user names from /etc/passwd along with their login shell?,"A. column -s : 1,7 /etc/passwd
+B. chop -c 1,7 /etc/passwd
+C. colrm 1,7 /etc/passwd
+D. cut -d: -f1,7 /etc/passwd",https://www.examtopics.com/discussions/linux-foundation/view/93615-exam-lfcs-topic-1-question-41-discussion/
+39,Which of the following commands can be used to create a USB storage media from a disk image?,"A. gdisk
+B. dd
+C. cc
+D. fdisk
+E. mount",https://www.examtopics.com/discussions/linux-foundation/view/93613-exam-lfcs-topic-1-question-39-discussion/
+38,Which of the following commands overwrites the bootloader located on /dev/sda without overwriting the partition table or any data following it?,"A. dd if=/dev/zero of=/dev/sda bs=512
+B. dd if=/dev/zero of=/dev/sda bs=512 count=1
+C. dd if=/dev/zero of=/dev/sda bs=440 count=1
+D. dd if=/dev/zero of=/dev/sda bs=440",https://www.examtopics.com/discussions/linux-foundation/view/35514-exam-lfcs-topic-1-question-38-discussion/
+37,SIMULATION - Which Debian package management tool asks the configuration questions for a specific already installed package just as if the package were being installed for the first time? (Specify ONLY the command without any path or parameters.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93611-exam-lfcs-topic-1-question-37-discussion/
+36,SIMULATION - Which command will disable swapping on a device? (Specify ONLY the command without any path or parameters.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93610-exam-lfcs-topic-1-question-36-discussion/
+35,SIMULATION - Which option to the yum command will update the entire system? (Specify ONLY the option name without any additional parameters.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93609-exam-lfcs-topic-1-question-35-discussion/
+34,Which file should be edited to select the network locations from which Debian installation package files are loaded?,"A. /etc/dpkg/dpkg.cfg
+B. /etc/apt/apt.conf
+C. /etc/apt/apt.conf.d
+D. /etc/apt/sources.list
+E. /etc/dpkg/dselect.cfg",https://www.examtopics.com/discussions/linux-foundation/view/93607-exam-lfcs-topic-1-question-34-discussion/
+33,"When removing a package, which of the following dpkg options will completely remove the files including configuration files?","A. --clean
+B. --delete
+C. --purge
+D. –remove",https://www.examtopics.com/discussions/linux-foundation/view/93606-exam-lfcs-topic-1-question-33-discussion/
+32,SIMULATION - What is the name of the main configuration file for GNU GRUB? (Specify the file name only without any path.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93604-exam-lfcs-topic-1-question-32-discussion/
+31,SIMULATION - In which directory must definition files be placed to add additional repositories to yum?,VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93603-exam-lfcs-topic-1-question-31-discussion/
+30,Which RPM command will output the name of the package which supplied the file /etc/exports?,"A. rpm -F /etc/exports
+B. rpm -qf /etc/exports
+C. rpm -Kl /etc/exports
+D. rpm -qp /etc/exports
+E. rpm -qi /etc/exports",https://www.examtopics.com/discussions/linux-foundation/view/93602-exam-lfcs-topic-1-question-30-discussion/
+29,SIMULATION - Which world-writable directory should be placed on a separate partition in order to prevent users from being able to fill up the / filesystem? (Specify the full path to the directory.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93600-exam-lfcs-topic-1-question-29-discussion/
+28,Which of the following environment variables overrides or extends the list of directories holding shared libraries?,"A. LD_LOAD_PATH
+B. LD_LIB_PATH
+C. LD_LIBRARY_PATH
+D. LD_SHARE_PATH
+E. LD_RUN_PATH",https://www.examtopics.com/discussions/linux-foundation/view/48675-exam-lfcs-topic-1-question-28-discussion/
+27,Which function key is used to start Safe Mode in Windows NT?,"A. F10
+B. F8
+C. F6
+D. Windows NT does not support Safe Mode",https://www.examtopics.com/discussions/linux-foundation/view/49957-exam-lfcs-topic-1-question-27-discussion/
+25,"When using rpm --verify to check files created during the installation of RPM packages, which of the following information is taken into consideration? (Choose THREE correct answers.)","A. Timestamps
+B. MD5 checksums
+C. Inodes
+D. File sizes
+E. GnuPG signatures",https://www.examtopics.com/discussions/linux-foundation/view/93598-exam-lfcs-topic-1-question-25-discussion/
+24,Which of the following commands can be used to download the RPM package kernel without installing it?,"A. yum download --no-install kernel
+B. yumdownloader kernel
+C. rpm --download --package kernel
+D. rpmdownload kernel",https://www.examtopics.com/discussions/linux-foundation/view/43641-exam-lfcs-topic-1-question-24-discussion/
+23,Which of the following commands lists all currently installed packages when using RPM package management?,"A. yum --query --all
+B. yum --list --installed
+C. rpm --query --all
+D. rpm --list –installed",https://www.examtopics.com/discussions/linux-foundation/view/48671-exam-lfcs-topic-1-question-23-discussion/
+22,Which of the following commands updates the linker cache of shared libraries?,"A. mkcache
+B. soconfig
+C. mkldconfig
+D. lddconfig
+E. ldconfig",https://www.examtopics.com/discussions/linux-foundation/view/93597-exam-lfcs-topic-1-question-22-discussion/
+21,What can the Logical Volume Manager (LVM) be used for? (Choose THREE correct answers.),"A. To create RAID 9 arrays.
+B. To dynamically change the size of logical volumes.
+C. To encrypt logical volumes.
+D. To create snapshots.
+E. To dynamically create or delete logical volumes.",https://www.examtopics.com/discussions/linux-foundation/view/93596-exam-lfcs-topic-1-question-21-discussion/
+20,Which of the following options is used in a GRUB Legacy configuration file to define the amount of time that the GRUB menu will be shown to the user?,"A. hidemenu
+B. splash
+C. timeout
+D. showmenu",https://www.examtopics.com/discussions/linux-foundation/view/93595-exam-lfcs-topic-1-question-20-discussion/
+19,Which of the following commands lists the dependencies of a given dpkg package?,"A. apt-cache depends-on package
+B. apt-cache dependencies package
+C. apt-cache depends package
+D. apt-cache requires package",https://www.examtopics.com/discussions/linux-foundation/view/43640-exam-lfcs-topic-1-question-19-discussion/
+18,Which of the following commands is used to update the list of available packages when using dpkg based package management?,"A. apt-get update
+B. apt-get upgrade
+C. apt-cache update
+D. apt-get refresh
+E. apt-cache upgrade",https://www.examtopics.com/discussions/linux-foundation/view/43639-exam-lfcs-topic-1-question-18-discussion/
+15,Which of the following kernel parameters instructs the kernel to suppress most boot messages?,"A. silent
+B. verbose=0
+C. nomesg
+D. quiet",https://www.examtopics.com/discussions/linux-foundation/view/93590-exam-lfcs-topic-1-question-15-discussion/
+14,Which of the following commands will write a message to the terminals of all logged in users?,"A. bcast
+B. mesg
+C. print
+D. wall
+E. yell",https://www.examtopics.com/discussions/linux-foundation/view/93589-exam-lfcs-topic-1-question-14-discussion/
+13,SIMULATION - Which command will display messages from the kernel that were output during the normal boot sequence?,VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/46315-exam-lfcs-topic-1-question-13-discussion/
+12,"What is the first program that is usually started, at boot time, by the Linux kernel when using SysV init?","A. /lib/init.so
+B. /sbin/init
+C. /etc/rc.d/rcinit
+D. /proc/sys/kernel/init
+E. /boot/init",https://www.examtopics.com/discussions/linux-foundation/view/46314-exam-lfcs-topic-1-question-12-discussion/
+11,Which of the following commands brings a system running SysV init into a state in which it is safe to perform maintenance tasks? (Choose TWO correct answers.),"A. shutdown -R 1 now
+B. shutdown -single now
+C. init 1
+D. telinit 1
+E. runlevel 1",https://www.examtopics.com/discussions/linux-foundation/view/93587-exam-lfcs-topic-1-question-11-discussion/
+9,SUMULATION - Which file in the /proc filesystem lists parameters passed from the bootloader to the kernel? (Specify the file name only without any path.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/93586-exam-lfcs-topic-1-question-9-discussion/
+8,Which of the following are init systems used within Linux systems? (Choose THREE correct answers.),"A. startd
+B. systemd
+C. Upstart
+D. SysInit
+E. SysV init",https://www.examtopics.com/discussions/linux-foundation/view/93585-exam-lfcs-topic-1-question-8-discussion/
+7,Which of the following commands reboots the system when using SysV init? (Choose TWO correct answers.),"A. shutdown -r now
+B. shutdown -r ""rebooting""
+C. telinit 6
+D. telinit 0
+E. shutdown -k now ""rebooting""",https://www.examtopics.com/discussions/linux-foundation/view/93584-exam-lfcs-topic-1-question-7-discussion/
+6,Which of the following information is stored within the BIOS? (Choose TWO correct answers.),"A. Boot device order
+B. Linux kernel version
+C. Timezone
+D. Hardware configuration
+E. The system's hostname",https://www.examtopics.com/discussions/linux-foundation/view/93583-exam-lfcs-topic-1-question-6-discussion/
+5,What of the following statements are true regarding /dev/ when using udev? (Choose TWO correct answers.),"A. Entries for all possible devices get created on boot even if those devices are not connected.
+B. Additional rules for udev can be created by adding them to /etc/udev/rules.d/.
+C. When using udev, it is not possible to create block or character devices in /dev/ using mknod.
+D. The /dev/ directory is a filesystem of type tmpfs and is mounted by udev during system startup.
+E. The content of /dev/ is stored in /etc/udev/dev and is restored during system startup.",https://www.examtopics.com/discussions/linux-foundation/view/74309-exam-lfcs-topic-1-question-5-discussion/
+4,Which of the following statements is correct when talking about /proc/?,"A. All changes to files in /proc/ are stored in /etc/proc.d/ and restored on reboot.
+B. All files within /proc/ are read-only and their contents cannot be changed.
+C. All changes to files in /proc/ are immediately recognized by the kernel.
+D. All files within /proc/ are only readable by the root user.",https://www.examtopics.com/discussions/linux-foundation/view/88312-exam-lfcs-topic-1-question-4-discussion/
+3,Which run levels should never be declared as the default run level when using SysV init? (Choose TWO correct answers.),"A. 0
+B. 1
+C. 3
+D. 5
+E. 6",https://www.examtopics.com/discussions/linux-foundation/view/43626-exam-lfcs-topic-1-question-3-discussion/
+1,Which SysV init configuration file should be modified to disable the ctrl-alt-delete key combination?,"A. /etc/keys
+B. /proc/keys
+C. /etc/inittab
+D. /proc/inittab
+E. /etc/reboot",https://www.examtopics.com/discussions/linux-foundation/view/50997-exam-lfcs-topic-1-question-1-discussion/
+2,"During a system boot cycle, what program is executed after the BIOS completes its tasks?","A. The bootloader
+B. The inetd program
+C. The init program
+D. The kernel",https://www.examtopics.com/discussions/linux-foundation/view/50998-exam-lfcs-topic-1-question-2-discussion/
+117,Which of the following commands can be used to display the inode number of a given file?,"A. inode
+B. ls
+C. ln
+D. cp",https://www.examtopics.com/discussions/linux-foundation/view/57597-exam-lfcs-topic-1-question-117-discussion/
+54,Which of the following commands will NOT update the modify timestamp on the file /tmp/myfile.txt?,"A. file /tmp/myfile.txt
+B. echo ""Hello"" >/tmp/myfile.txt
+C. sed -ie ""s/1/2/"" /tmp/myfile.txt
+D. echo -n ""Hello"" >>/tmp/myfile.txt
+E. touch /tmp/myfile.txt",https://www.examtopics.com/discussions/linux-foundation/view/68328-exam-lfcs-topic-1-question-54-discussion/
+112,SIMULATION - Which umask value will result in the default access permissions of 600 (rw-------) for files and 700 (rwx------) for directories? (Specify only the numerical umask value.),VERIFY - No multiple choice answers found. Perhaps an image?,https://www.examtopics.com/discussions/linux-foundation/view/45537-exam-lfcs-topic-1-question-112-discussion/
+60,What is the effect of the egrep command when the -v option is used?,"A. It enables color to highlight matching parts.
+B. It only outputs non-matching lines.
+C. It shows the command's version information.
+D. It changes the output order showing the last matching line first.",https://www.examtopics.com/discussions/linux-foundation/view/44771-exam-lfcs-topic-1-question-60-discussion/
+131,What is the difference between the commands test -e path and test -f path?,"A. They are equivalent options with the same behavior.
+B. The -f option tests for a regular file.  The -e option tests for an empty file.
+C. Both options check the existence of the path.  The -f option also confirms that it is a regular file.
+D. The -f option tests for a regular file.  The -e option tests for an executable file.",https://www.examtopics.com/discussions/linux-foundation/view/45777-exam-lfcs-topic-1-question-131-discussion/

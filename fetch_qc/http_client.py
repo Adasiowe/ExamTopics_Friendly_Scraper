@@ -22,7 +22,7 @@ class HTTPClient:
                     logging.warning(
                         f"503 error for {url}. Retrying... (Attempt {attempt}/{retries})"
                     )
-                    time.sleep(random.uniform(5, 10))
+                    time.sleep(random.uniform(8, 15))
                 else:
                     logging.warning(
                         f"Failed to fetch {url} with status code {response.status_code}. "
